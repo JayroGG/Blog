@@ -1,4 +1,5 @@
 import { getPosts } from '../../services/getPosts'
+import LikeButton from '../LikeButton'
 
 export default async function PostsList () {
   const posts = await getPosts()
@@ -7,6 +8,7 @@ export default async function PostsList () {
     <article key={post.id}>
       <h2 style={{ color: '#09f' }}>{post.title}</h2>
       <p>{post.body}</p>
+      <LikeButton id={post.id} />
     </article>
   ))
 }
