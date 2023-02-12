@@ -1,5 +1,5 @@
 export default function HomePage () {
   return (
-    <h1> Nextjs app</h1>
+    <h1>BlogGram</h1>
   )
 }
