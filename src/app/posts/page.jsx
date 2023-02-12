@@ -1,15 +1,5 @@
-import { getPosts } from '../../services/getPosts'
+import PostsList from './PostsList'
 
 export default async function PostsPage () {
-  const posts = await getPosts()
-  return (
-    <section>
-      {posts.map(post => (
-        <article key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
-        </article>
-      ))}
-    </section>
-  )
+  return <PostsList />
 }
