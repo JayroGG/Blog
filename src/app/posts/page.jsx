@@ -1,5 +1,15 @@
-export default function Posts () {
+import { getPosts } from '../../services/getPosts'
+
+export default async function PostsPage () {
+  const posts = await getPosts()
   return (
-    <h1>Posts</h1>
+    <section>
+      {posts.map(post => (
+        <article key={post.id}>
+          <h2>{post.title}</h2>
+          <p>{post.body}</p>
+        </article>
+      ))}
+    </section>
   )
 }

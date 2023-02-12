@@ -12,7 +12,7 @@ const links = [{
   route: '/posts'
 }]
 
-export function Navigation () {
+export default function Navigation () {
   return (
     <header className={styles.header}>
       <nav>
