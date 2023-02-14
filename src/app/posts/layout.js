@@ -1,5 +1,6 @@
 export default function PostLayaout ({ children }) {
-  // Breadcrumb Layout
+  // Second level Layout
+  // Contains Breadcrumb, and All the Post as children
   return (
     <div>
       <small>Home &bull; Posts</small>
